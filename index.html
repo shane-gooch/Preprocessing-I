@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
 
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
   <title>My Resume</title>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -32,32 +34,39 @@
     <section class="header">
         <header>
           <h1>Shane Gooch</h1>
-          <p>Insert Inspiration Quote</p>
+          <p>Insert Quote</p>
         </header>
     </section>
 
   <!-- introduction -->
     <section class="intro">
-      <img class="working-pic" src="img/working_pic.jpeg" alt="working_pic">
+      <div clas=working_picture_container>
+        <img class="working-pic" src="img/working_pic.jpeg" alt="working_pic">
+      </div>
       <article class="intro-parapgraph">
         <h2>About Me:</h2>
-å        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,       consequatur. Accusamus saepe ut deleniti dolor voluptate corrupti, molestiae quae, laudantium corporis qui reiciendis magni, placeat et provident architecto ipsam! Expedita?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,       consequatur. Accusamus saepe ut deleniti dolor voluptate corrupti, molestiae quae, laudantium corporis qui reiciendis magni, placeat et provident architecto ipsam! Expedita?</p>
       </article>
     </section>
 
     <!-- Skills Section -->
     <section class="skills-section">
       <h2>Skills</h2>
-      <divclass="skills-icon">
-        <img class="html" src="img/html.jpeg" alt="html_icon">
-        <img class="css" src="img/css.png" alt="css_icon">
-        <img class="javascript" src="img/js.png" alt="javascript_icon">
-    </div>
+      <div class="skills-icon">
+        <div class="icon-container">
+          <img class="icon" src="img/html.jpeg" alt="html_icon">
+        </div>
+        <div class="icon-container">
+         <img class="icon" src="img/css.png" alt="css_icon">
+        </div>
+        <div class="icon-container">
+          <img class="icon" src="img/js.png" alt="javascript_icon">
+        </div>
     </section>
 
     <!-- Work History Section -->
     <section class="work-history-section">
-      <h3>Work History</h3>
+      <h2>Work History</h3>
       <div class="work-history">
         <article class="work1">
           <img class='rh_icon' src="img/rh_icon.png" alt="robert_half_icon">
@@ -68,15 +77,15 @@
             <h4>Technical Recruiter</h4>
         </article>
         <article class="work1">
-            <img class='courthoue_icon' src="img/courthouse.jpeg" alt="courthouse_icon">
-            <h4>Legal Advocate</h4>
+            <img class='courthouse_icon' src="img/courthouse.jpeg" alt="courthouse_icon">
+            <h4><span class="text-margin2">Legal Advocate</span></h4>
         </article>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact-section">
-      <a href="#contact"><h2>Contact Me</h2></a>
+      <a class="button" href=".contact.html"><button>Contact Me</button></a>
     </section>
   </div>
 </body>

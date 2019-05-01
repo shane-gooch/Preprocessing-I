@@ -59,28 +59,40 @@ html, body {
 
 @font-family: 'Montserrat', sans-serif;
 
-@font-weight: bolder; 
+@font-weight: bold; 
 
+@font-size: 1.5rem; 
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
-	border: 1px solid red;
-	padding: 20px 1.25%;
-	font-family: @font-paragraph;
-  }
+@background-color: black;
 
 .flex-center {
 	display: flex;
 	justify-content: center;
 }
 
+.flex-center2 {
+	display: flex;
+	align-items: center;
+}
+
+//  Container
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	height: auto;
+	padding: 20px 1.25%;
+	font-family: @font-family;
+  }
+
+//Navbar
+
 .navbar {
-	background-color: black;
+	background-color: @background-color;
 	.flex-center();
 
 	nav {
-		border: 1px solid red;
+		padding: 10px;
 	}
 
 	a {
@@ -91,11 +103,136 @@ html, body {
 
 }
 
+//Header
+
 .header {
-	background-color: black;
-	margin-top: 10px;
+	margin-top: 30px;
 
 	header {
-		.flex-center();
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+		h1 {
+			font-weight: @font-weight;
+			font-size: 2.25rem;
+			margin-bottom: 5px;
+		}
+}
+
+//Intro
+
+.intro {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+
+	.working_picture_container {
+		width: 100%;
+		height: auto;
+	}
+
+	.working-pic {
+		object-fit: contain;
+		border: 2px solid black;
+	}
+
+	.intro-parapgraph {
+		text-align: center;
+	}
+
+	h2 {
+		margin: 20px 0px;
+	}
+}
+
+//Skills Section
+
+.skills-section {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+
+	h2 {
+		font-size: @font-size;
+		font-weight: calc(@font-weight - 10%);
+	}
+	.skills-icon {
+		margin: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+//Work History Section
+
+.work-history-section {
+	text-align: center;
+	margin-top: 40px;
+
+	h2 {
+		font-size: @font-size;
+		font-weight: calc(@font-weight - 10%);
+	}
+
+	.work-history {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		.tek_icon {
+			width: 225px;
+			height: 225px;
+		}
+
+		.courthouse_icon {
+			width: 225px;
+			height: 225px;
+		}
+	}
+}
+
+.contact-section {
+	margin-top: 50px;
+	text-align: center;
+	
+	button {
+		margin-top: 50px;
+		background-color:#3e4444;
+		color: white;
+		padding: 20px 40px;
+		font-size: 1.25rem;
+		border-radius: 10px;
+	}
+}
+
+//Mobile
+
+@media(max-width: 500px) {
+	.container {
+	margin: 0 auto;
+	height: auto;
+	padding: 20px 1.25%;
+	}
+	
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+		a {
+			padding: 5px;
+		}
+
+	.working-pic {
+		display: none;
+	}	
+	
+	.skills-icon {
+		border: 1px solid red;
+		display: flex;
+		flex-direction:column;
 	}
 }
