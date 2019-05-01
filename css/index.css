@@ -260,7 +260,10 @@ body {
     display: none;
   }
   .skills-icon {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+  .work-history {
     display: flex;
     flex-direction: column;
   }
