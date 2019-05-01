@@ -57,3 +57,45 @@ html, body {
 	height: 100%;
 }
 
+@font-family: 'Montserrat', sans-serif;
+
+@font-weight: bolder; 
+
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	border: 1px solid red;
+	padding: 20px 1.25%;
+	font-family: @font-paragraph;
+  }
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar {
+	background-color: black;
+	.flex-center();
+
+	nav {
+		border: 1px solid red;
+	}
+
+	a {
+		margin-right: 25px;
+		text-decoration: none;
+		color: white;
+	}
+
+}
+
+.header {
+	background-color: black;
+	margin-top: 10px;
+
+	header {
+		.flex-center();
+	}
+}

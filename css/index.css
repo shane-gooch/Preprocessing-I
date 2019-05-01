@@ -134,3 +134,23 @@ html,
 body {
   height: 100%;
 }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid red;
+  padding: 20px 1.25%;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.navbar nav {
+  border: 1px solid red;
+}
+.navbar a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: white;
+}
