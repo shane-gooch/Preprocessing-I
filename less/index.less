@@ -65,12 +65,12 @@ html, body {
 
 @background-color: black;
 
-.flex-center {
+.flex-center() {
 	display: flex;
 	justify-content: center;
 }
 
-.flex-center2 {
+.flex-center2() {
 	display: flex;
 	align-items: center;
 }
@@ -151,7 +151,7 @@ html, body {
 
 .skills-section {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 70px;
 	margin-bottom: 100px;
 
 	h2 {
@@ -163,7 +163,12 @@ html, body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-	}
+
+		@media (max-width: 500px) {
+				display: flex;
+				flex-direction: column;
+			}
+		}
 }
 
 //Work History Section
@@ -173,6 +178,7 @@ html, body {
 	margin-top: 40px;
 
 	h2 {
+		margin-bottom: 20px;
 		font-size: @font-size;
 		font-weight: calc(@font-weight - 10%);
 	}
@@ -182,6 +188,15 @@ html, body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
+		
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			
+			h4 {
+				margin-bottom: 15px;
+			}
+		}
 
 		.tek_icon {
 			width: 225px;
@@ -196,7 +211,7 @@ html, body {
 }
 
 .contact-section {
-	margin-top: 50px;
+	margin-top: 70px;
 	text-align: center;
 	
 	button {
@@ -209,34 +224,26 @@ html, body {
 	}
 }
 
-//Mobile
 
 @media (max-width: 500px) {
 	.container {
-	margin: 0 auto;
-	height: auto;
-	padding: 20px 1.25%;
+		width: 500px;
 	}
 	
-	nav {
-		display: flex;
-		flex-direction: column;
-	}
-		a {
-			padding: 5px;
+		nav {
+			display: flex;
+			flex-direction: column;
 		}
+			a {
+				padding: 5px;
+			}
 
-	.working-pic {
-		display: none;
-	}	
-
-	.skills-icon {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.work-history {
-		display: flex;
-		flex-direction: column;
-	}
+		.working-pic {
+			display: none;
+		}	
+		
+		.work-history {
+			display: flex;
+			flex-direction: column;
+		}
 }
