@@ -1,1 +1,272 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  height: auto;
+  padding: 20px 1.25%;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.navbar nav {
+  padding: 10px;
+}
+.navbar a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: white;
+}
+.header {
+  margin-top: 30px;
+}
+.header header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.header h1 {
+  font-weight: bold;
+  font-size: 2.25rem;
+  margin-bottom: 5px;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.intro .working_picture_container {
+  width: 100%;
+  height: auto;
+}
+.intro .working-pic {
+  object-fit: contain;
+  border: 2px solid black;
+}
+.intro .intro-parapgraph {
+  text-align: center;
+}
+.intro h2 {
+  margin: 20px 0px;
+}
+.skills-section {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.skills-section h2 {
+  font-size: 1.5rem;
+  font-weight: calc(bold - 10%);
+}
+.skills-section .skills-icon {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .skills-section .skills-icon {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.work-history-section {
+  text-align: center;
+  margin-top: 40px;
+}
+.work-history-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: calc(bold - 10%);
+}
+.work-history-section .work-history {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .work-history-section .work-history {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-history-section .work-history h4 {
+    margin-bottom: 15px;
+  }
+}
+.work-history-section .work-history .tek_icon {
+  width: 225px;
+  height: 225px;
+}
+.work-history-section .work-history .courthouse_icon {
+  width: 225px;
+  height: 225px;
+}
+.contact-section {
+  margin-top: 70px;
+  text-align: center;
+}
+.contact-section button {
+  margin-top: 50px;
+  background-color: #3e4444;
+  color: white;
+  padding: 20px 40px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    padding: 5px;
+  }
+  .working-pic {
+    display: none;
+  }
+  .work-history {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+  <title>Contact Page</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/contact.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<!-- Navbar -->
+    <section class="navbar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </section>
+
+<!-- Contact Form -->
+    <div class="background-img">
+        <secion class="form-section">
+            <h1><span>Contact Me</span></h1>
+            <form>
+                <span>First Name:</span>
+                <br>
+                <input class='text-box' type="text" name='firstname' required>
+                <br>
+                Last Name:
+                <br>
+                <input class='text-box' type="text" name='lastname' required>
+                <br>
+                Phone Number:
+                <br>
+                <input class='text-box' type='tel' name='phone' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'required>
+                <br>
+                Email: 
+                <br>
+                <input class='text-box' type='email' name='email' required>
+                <br>
+                <input class='submit' type="submit" value='Submit'>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
